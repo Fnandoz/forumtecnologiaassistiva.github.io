@@ -1,0 +1,7 @@
+body{
+  background: #000;
+}
+
+a, h2, p, label, .text-muted{
+  color: #fff;
+}
