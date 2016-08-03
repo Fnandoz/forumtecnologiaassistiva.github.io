@@ -321,13 +321,9 @@
           </div>
         </div>
 
-
       </section>
 
-
-
       <hr class="featurette-divider">
-
 
       <section id="imprensa">
         <div class="row featurette">
@@ -417,14 +413,7 @@
             input = 14;
             td = 14;
             th = 14;
-        }/**else{
-          var
-            sizeP = 21,
-            sizeH2 = 50,
-            sizeA = 14,
-            sizeLabel = 14,
-            input = 14;
-        }**/
+        }
 
         $('#aFonte').click(function () {
           sizeH2 += 1;
@@ -461,7 +450,6 @@
         });
 
 
-
     });
 
     function resizeText(multiplier) {
@@ -469,56 +457,6 @@
         document.body.style.fontSize = "1.0em";
       }
       document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
-    }
-
-    function gForm() {
-      var nome = document.getElementById('nCompleto').value;
-      var cpf = document.getElementById('cpf').value;
-      var dNasc = document.getElementById('dNasc').value;
-      var email = document.getElementById('email').value;
-      var fAcademica = document.getElementById('fAcademica').value;
-      var instituicao = document.getElementById('instituicao').value;
-      var endereco = document.getElementById('endereco').value;
-      var pParticipante = document.getElementById('pParticipante').value;
-      var infoAdicionais = document.getElementById('infoAdicionais').value;
-
-
-      if((nome != "") && (cpf != "") && (fAcademica != "") && (instituicao != "") && (endereco != "") && (pParticipante != "")){
-        $.ajax({
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSc8SejvGM3VjFl1dB-gp5tS1Hc0K8lPUEmrEFjWDQb5AhF-QA/formResponse",
-            data: {
-              "entry.45077154": nome,
-              "entry.1912726892": cpf,
-              "entry.218689700": dNasc,
-              "entry.1232573063": email,
-              "entry.585883593": fAcademica,
-              "entry.2001962001": instituicao,
-              "entry.2060167185": endereco,
-              "entry.1509646550": pParticipante,
-              "entry.1328790189": infoAdicionais,
-            },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-                0: function() {
-                    alert("Inscrição enviada com sucesso!");
-                    document.getElementById('nCompleto').value = "";
-                    document.getElementById('cpf').value = "";
-                    document.getElementById('dNasc').value = "";
-                    document.getElementById('email').value = "";
-                    document.getElementById('fAcademica').value = "";
-                    document.getElementById('instituicao').value = "";
-                    document.getElementById('endereco').value = "";
-                    document.getElementById('infoAdicionais').value = "";
-                },
-                200: function() {
-                    alert("Erro ao efetuar a inscrição, tente novamente mais tarde. Caso o erro persista, entre em contato pelo e-mail forumtecnologiaassistiva@gmail.com");
-                }
-            }
-        });
-      }else{
-        alert("Por favor, preencha todos os campos!");
-      }
     }
 
     //Formulário de contato
