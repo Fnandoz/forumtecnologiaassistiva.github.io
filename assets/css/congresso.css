@@ -31,6 +31,28 @@ h2.contraste {
   padding: -30px;
 }
 
+
+
+@media (min-width:930px) and (max-width:1099px){
+  .acessibilidade{
+    margin-left: 90px;
+  }
+}
+
+@media (min-width:1100px) and (max-width:1301px){
+  .acessibilidade{
+    margin-left: 200px;
+  }
+}
+
+@media (min-width:1302px) {
+  .acessibilidade{
+    margin-left: 450px;
+  }
+}
+
+
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
   position: relative;
