@@ -2,6 +2,6 @@ body{
   background: #000;
 }
 
-a, h2, p, label, .text-muted{
+a, h2, p, label, td, th, .text-muted{
   color: #fff;
 }
