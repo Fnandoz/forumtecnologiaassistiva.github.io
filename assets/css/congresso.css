@@ -21,6 +21,8 @@ h2.contraste {
 }
 
 
+
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -35,19 +37,19 @@ h2.contraste {
 
 @media (min-width:930px) and (max-width:1099px){
   .acessibilidade{
-    margin-left: 90px;
+    margin-left: 100px;
   }
 }
 
 @media (min-width:1100px) and (max-width:1301px){
   .acessibilidade{
-    margin-left: 200px;
+    margin-left: 100px;
   }
 }
 
 @media (min-width:1302px) {
   .acessibilidade{
-    margin-left: 450px;
+    margin-left: 100px;
   }
 }
 
