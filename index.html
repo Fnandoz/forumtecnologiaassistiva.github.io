@@ -141,7 +141,7 @@
 
             <p class="lead" align="justify" style="text-indent: 30px;">A I Feira Estadual EXISTIR, I Feira de Ações Integradas à Pessoa com Deficiência e a II Feira Paraense de Tecnologia Assistiva, Acessibilidade e Inclusão Social da Pessoa com Deficiência acontecem paralelamente ao V Fórum de Tecnologia Assistiva e Inclusão Social da Pessoa com Deficiência nos dias 06 a 08 de Novembro de 2016 no Hall de Eventos da Estação das Docas. Clique no botão abaixo para conhecer a feira.</p>
             <p><a href="feira.html"><button class="btn btn-lg btn-primary" role="button">Participar da feira</button></a>
-            <a href="assets/documents/programacao.pdf"><button class="btn btn-lg btn-primary" role="button">Programação preliminar</button></a></p>
+            <a href="assets/documents/programacao.pdf" target="_blank"><button class="btn btn-lg btn-primary" role="button">Programação preliminar</button></a></p>
           </div>
           <div class="col-md-5">
             <div class="embed-responsive embed-responsive-4by3">
@@ -540,6 +540,26 @@
       <!-- /END THE FEATURETTES -->
 
 
+      <!-- Modal da programação preliminar -->
+      <div class="modal fade" id="modalProgramacao" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Programação preliminar</h4>
+            </div>
+            <div class="modal-body">
+              <h4>Acompanhe a progamação preliminar do V Fórum de Tecnologia Assistiva e Inclusão Social da Pessoa com Deficiência</h4>
+            </div>
+            <div class="modal-footer">
+              <a href="assets/documents/programacao.pdf" target="_blank"><button class="btn btn-primary" role="button">Programação</button></a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Ir para o topo</a></p>
@@ -560,6 +580,11 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
+
+    $(document).ready(function() {
+      $('#modalProgramacao').modal('show');
+    });
+
     jQuery(document).ready(function($){
         $('#navbar').scrollspy({
           offset: 10
