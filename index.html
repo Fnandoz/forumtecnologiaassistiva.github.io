@@ -30,6 +30,8 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/congresso.css" rel="stylesheet">
 
+
+
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset='80'>
     <div class="navbar-wrapper page-scroll">
@@ -54,6 +56,7 @@
                 <!--li><a href="#palestrantes">Palestrantes</a></li-->
                 <li><a href="#belem">Belém/PA</a></li>
                 <li><a href="#hospedagem">Hotel</a></li>
+                <li><a href="#curso">Curso</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#realizacao">Realização</a></li>
                 <li><a href="#aumentarFonte" id="aFonte" class="bordaAcessibilidade acessibilidade">A+</a></li><!-- onclick="resizeText(1)" -->
@@ -368,12 +371,33 @@
               <p class="lead" align="justify"><b>Fone: </b>(91) 0800-892-0170</p>
               <p class="lead" align="justify"><a href="https://www.facebook.com/hotelprincesabelem/" target="blank">https://www.facebook.com/hotelprincesabelem/</a></p>
             </div>
+          </div>
+        </div>
+      </section>
 
 
+      <section id="curso">
+        <div class="row featurette">
+          <div>
+            <h2 class="featurette-heading">Curso pré-evento
+               <span class="text-muted"> Introdução ao mundo do autismo e introdução ao DIR/FLOORTIME</span></h2>
+            <br>
+            <br>
+            <br>
 
-
-
-
+            <div class="col-md-4 org">
+              <a href="assets/images/curso.jpeg" class="thumbnail" data-lightbox="image-1">
+                <img src="assets/images/curso.jpeg" class="img-responsive" alt="Pré curso">
+              </a>
+            </div>
+            <div class="col-md-6 org">
+              <p class="lead">
+                Inscrições a partir de 03/10/2016<br>
+                De 9h às 16h <br>
+                Nedeta: Tv. Perebebuí, 2623 - Bloco D Sala 10 <br>
+                (91) 3277-1909
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -551,6 +575,9 @@
               <h4><b>Prazo máximo para o envio dos trabalhos corrigidos até o dia 06/10/2016</b></h4>
               <hr>
               <h4>Verificar o(s) parecere(s) do(s) Avaliador(es) em sua conta.</h4>
+              <hr>
+              <h4>Curso pré-evento Introdução ao mundo do autismo e introdução ao DIR/FLOORTIME</h4>
+              <a href="#curso"><button class="btn  btn-primary" type="button" data-dismiss="modal">Saiba mais</button></a>
             </div>
             <div class="modal-footer">
               <!--a href="!#" target="_blank"><button class="btn btn-primary" role="button"></button></a-->
@@ -580,6 +607,23 @@
     <script src="assets/js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Lightbox-->
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
+    <script src="assets/js/lightbox.js"></script>
+
+
+    <script>
+        lightbox.option({
+          'resizeDuration': 200,
+          'wrapAround': false,
+          'maxWidth':1024,
+          'maxHeight':900,
+          'positionFromTop':0
+        })
+    </script>
+
+
     <script>
 
     $(document).ready(function() {
